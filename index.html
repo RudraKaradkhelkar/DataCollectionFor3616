@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>DataCollection</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+        <h1>Speaker/Amp Data Collection</h1>
+        <p>Please fill out this form with the required information</p>
+        <div class="menu">
+        <form action="https://api.sheetmonkey.io/form/eKRs3ea6dQh1V4AbgXngZ2" method="post" id="formID">
+            <input type="hidden" name="Date" value="x-sheetmonkey-current-date-time" />
+            
+            <label for="information" class="linkToDocs">If you need any clarification about the information needed, please go <a href="https://docs.google.com/document/d/1kr4CUGHfTF6tAMW8G-UH-0Ys2sjWRLjSHltRalcHqc8/edit?usp=sharing">here</a></label>
+
+            <fieldset class="firstFieldset">
+                <legend>Scoring In:</legend>
+                <label for="Speaker"><input id="Speaker" type="radio" name="Scoring-In" class="inline" checked/> Speaker</label>
+                <label for="Amp"><input id="Amp" type="radio" name="Scoring-In" class="inline" /> Amp</label>
+                
+            </fieldset>
+
+            <fieldset>
+                <label for="first-name">Enter Your Name: <input id="Name" name="Name" type="text" required /></label>
+            </fieldset>
+            
+            <fieldset>
+                
+                <label for="Distance-Left-Wall">Distance from Left Wall of Field - Drivers Side (in):<input id="Distance-Left-Wall" type="number" step=".01" name="Distance-Left-Wall (in)" /></label>
+                <label for="Distance-Left-Edge">Distance from Front Left Edge of Speaker - Drivers Side (in):<input id="Distance-Left-Edge" type="number" step=".01" name="Distance-Left-Edge (in)" /></label>
+                <label for="Battery-Voltage">Battery Voltage (V):<input id="Battery-Voltage" type="number" step=".01" name="Battery-Voltage (V)" /></label>
+                <label for="Heading-Angle">Heading Angle (deg): <input id="Heading-Angle" type="number" step=".01" name="Heading-Angle (deg)" /></label>
+                <label for="Shooter-Motor-Velocity">Shooter Motor Velocity: <input id="Shooter-Motor-Velocity" type="number" step=".01" name="Shooter-Motor-Velocity" /></label>
+                <label for="User-Input-Shooter-Speed">User Input Shooter Speed: <input id="User-Input-Shooter-Speed" type="number" step=".01" name="User-Input-Shooter-Speed" /></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="Was-Note-Scored">Was the note scored?
+                <select id="Was-Note-Scored" name="Was-Note-Scored" required>
+                    <option value="">(select one)</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                </label>
+
+                <label for="How-Note-Traveled">How the note traveled:
+                <textarea id="How-Note-Traveled" name="How-Note-Traveled" rows="2" cols="30" placeholder="The note clipped the edge while going in..." ></textarea>
+                </label>
+
+                <label for="Extra-Notes">Extra Notes:
+                <textarea id="Extra-Notes" name="Extra-Notes" rows="3" cols="30" placeholder="The note made it in but..."></textarea>
+                </label>
+
+            </fieldset>
+            
+            <input type="submit" value="Submit" />
+
+            <p>This HTML form was made by <strong>Rudra Karadkhelkar</strong></p>
+        </form>
+    </div>
+  </body>
+</html>
